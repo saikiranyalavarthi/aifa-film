@@ -142,6 +142,8 @@ import Clubs from "./pages/Clubs";
 import Challenges from "./pages/Challenges";
 import Awards from "./pages/Awards";
 
+import Workshoppagefull from "./pages/Workshoppagefull";
+
 export default function App() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
@@ -193,11 +195,12 @@ export default function App() {
           <Route path="/deals" element={<AiDeals />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/workshops" element={<WorkshopsPage />} />
-            <Route path="/forums" element={<Forums />} />
-  <Route path="/events" element={<Events />} />
-  <Route path="/clubs" element={<Clubs />} />
-  <Route path="/challenges" element={<Challenges />} />
-  <Route path="/awards" element={<Awards />} />
+          <Route path="/forums" element={<Forums />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/clubs" element={<Clubs />} />
+          <Route path="/challenges" element={<Challenges />} />
+          <Route path="/awards" element={<Awards />} />
+          <Route path="/Workshoppagefull" element={<Workshoppagefull />} />
         </Routes>
       </main>
 

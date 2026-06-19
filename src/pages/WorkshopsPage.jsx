@@ -1,4 +1,5 @@
 "use client";
+import { Link } from "react-router-dom";
 
 const courses = [
   {
@@ -36,7 +37,6 @@ const courses = [
     price: "₹ 199",
     mode: "ONLINE",
   },
-  
 ];
 
 export default function WorkshopsPage() {
@@ -198,8 +198,8 @@ export default function WorkshopsPage() {
                     </div>
 
                     {/* INFO BOXES */}
-                   <div
-  className="
+                    <div
+                      className="
     grid
     grid-cols-1
 
@@ -207,10 +207,10 @@ export default function WorkshopsPage() {
 
     gap-[8px]
   "
->
-  {/* DURATION */}
-  <div
-    className="
+                    >
+                      {/* DURATION */}
+                      <div
+                        className="
       flex
       flex-col
       items-start
@@ -226,9 +226,9 @@ export default function WorkshopsPage() {
 
       bg-[#DCDCDC]
     "
-  >
-    <p
-      className="
+                      >
+                        <p
+                          className="
         text-[#6E7072]
 
         font-[Montserrat]
@@ -240,12 +240,12 @@ export default function WorkshopsPage() {
 
         uppercase
       "
-    >
-      ⏱ Duration
-    </p>
+                        >
+                          ⏱ Duration
+                        </p>
 
-    <p
-      className="
+                        <p
+                          className="
         text-[#2B2D30]
 
         font-[Montserrat]
@@ -257,14 +257,14 @@ export default function WorkshopsPage() {
 
         uppercase
       "
-    >
-      {item.duration}
-    </p>
-  </div>
+                        >
+                          {item.duration}
+                        </p>
+                      </div>
 
-  {/* PRICING */}
-  <div
-    className="
+                      {/* PRICING */}
+                      <div
+                        className="
       flex
       flex-col
       items-start
@@ -280,9 +280,9 @@ export default function WorkshopsPage() {
 
       bg-[#DCDCDC]
     "
-  >
-    <p
-      className="
+                      >
+                        <p
+                          className="
         text-[#6E7072]
 
         font-[Montserrat]
@@ -294,12 +294,12 @@ export default function WorkshopsPage() {
 
         uppercase
       "
-    >
-      ⊞ Pricing
-    </p>
+                        >
+                          ⊞ Pricing
+                        </p>
 
-    <p
-      className="
+                        <p
+                          className="
         text-[#2B2D30]
 
         font-[Montserrat]
@@ -309,14 +309,14 @@ export default function WorkshopsPage() {
 
         font-bold
       "
-    >
-      {item.price}
-    </p>
-  </div>
+                        >
+                          {item.price}
+                        </p>
+                      </div>
 
-  {/* MODE */}
-  <div
-    className="
+                      {/* MODE */}
+                      <div
+                        className="
       flex
       flex-col
       items-start
@@ -332,9 +332,9 @@ export default function WorkshopsPage() {
 
       bg-[#DCDCDC]
     "
-  >
-    <p
-      className="
+                      >
+                        <p
+                          className="
         text-[#6E7072]
 
         font-[Montserrat]
@@ -346,12 +346,12 @@ export default function WorkshopsPage() {
 
         uppercase
       "
-    >
-      ⌨ Mode
-    </p>
+                        >
+                          ⌨ Mode
+                        </p>
 
-    <p
-      className="
+                        <p
+                          className="
         text-[#2B2D30]
 
         font-[Montserrat]
@@ -363,17 +363,19 @@ export default function WorkshopsPage() {
 
         uppercase
       "
-    >
-      {item.mode}
-    </p>
-  </div>
-</div>
+                        >
+                          {item.mode}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 {/* BUTTON */}
-               <button
-  className="
+
+                <Link to="/Workshoppagefull ">
+                  <button
+                    className="
     flex
 
     row-start-2
@@ -411,12 +413,14 @@ export default function WorkshopsPage() {
     uppercase
 
     hover:opacity-90
-    transition
+    transition 
+    cursor-pointer
   "
->
-  RESERVE SPOT
-  <span className="text-[22px]">→</span>
-</button>
+                  >
+                    RESERVE SPOT
+                    <span className="text-[22px]">→</span>
+                  </button>
+                </Link>
               </div>
             ))}
           </div>
